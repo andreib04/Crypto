@@ -12,7 +12,7 @@ namespace Crypto
         {
             CaesarCypher caesar = new CaesarCypher();
 
-            string txt = "hello";
+            string txt = "HELLO";
             //string encrypted = caesar.Encrypt(txt, 3);
 
             //Console.WriteLine(encrypted);
@@ -24,7 +24,7 @@ namespace Crypto
 
             Console.WriteLine(encrypt);
             Console.WriteLine(cypher.Decrypt(encrypt, 5));
-            cypher.Cryptoanalisis(txt);
+            cypher.Cryptoanalisis(encrypt);
         }
     }
 }
